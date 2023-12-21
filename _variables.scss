@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Primary and theme color */
+$color-primary: rgba(23, 23, 23, 1);
+$color-secondary: rbga(38, 38, 38, 1);
+$color-black: rgba(0, 0, 0, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-medium-gray: #d4d4d4;
+$color-light-gray: #f5f5f5;
+$color-gray-4: #e5e5e5;
+$color-gray-5: #525252;
+$color-gray-6: #999999;
+$color-primary-accent: #1d4ed8;
+$color-primary-accent-hover: #0638c5;
+$color-secondary-accent: #d97706;
+$color-secondary-accent-hover: #b66304;
+$color-tertiary-accent: #f0fdf4;
+$color-tertiary-accent-hover: #ddeee2;
+$color-fourth-accent: #14532d;
+$color-light-green: #b2e9c8;
+$color-lighter-green: #daf8e6;
+$color-warning: #e0f6ff;
+
+/* Fonts */
+$body-font-family: "Poppins";
+$heading-font-family: "Poppins";
+$element-font-family: "Poppins";
+$base-font-size: 16px;
+$header-font-size: 0.875em; // 14px
+$table-column-header-font-size: 1.125em; // 18px
+$element-font-size: 0.75em;
+$base-font-weight-900: 900;
+$base-font-weight-800: 800;
+$base-font-weight-700: 700;
+$base-font-weight-600: 600;
+$base-font-weight-500: 500;
+$base-font-weight-400: 400;
+$base-font-weight-300: 300;
+$base-font-weight-200: 200;
+$base-font-weight-100: 100;
+
+/* Control Card */
+$control-card-width: 492px;
+
+/* Input */
+$input-border-radius: 7px;
+
+/* Button */
+$button-border-radius: 4px;
+
+/* Table */
+$table-header-background-color: #d4d4d4;

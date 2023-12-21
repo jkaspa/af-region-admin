@@ -1,0 +1,75 @@
+@use "./variables" as v;
+/********** Button controls **********/
+button {
+  font-family: v.$element-font-family !important;
+  border-radius: v.$button-border-radius !important;
+  &.buttonStyle1,
+  &.buttonStyle2,
+  &.buttonStyle3,
+  &.button-save {
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+  }
+  &.buttonStyle1 {
+    background-color: transparent;
+    font-size: v.$base-font-size;
+    font-weight: v.$base-font-weight-300;
+    display: flex;
+    align-items: center;
+    border: none;
+    &::before {
+      padding: 5px 5px 0 0;
+      content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M19 11.5H13V5.5C13 5.23478 12.8946 4.98043 12.7071 4.79289C12.5196 4.60536 12.2652 4.5 12 4.5C11.7348 4.5 11.4804 4.60536 11.2929 4.79289C11.1054 4.98043 11 5.23478 11 5.5V11.5H5C4.73478 11.5 4.48043 11.6054 4.29289 11.7929C4.10536 11.9804 4 12.2348 4 12.5C4 12.7652 4.10536 13.0196 4.29289 13.2071C4.48043 13.3946 4.73478 13.5 5 13.5H11V19.5C11 19.7652 11.1054 20.0196 11.2929 20.2071C11.4804 20.3946 11.7348 20.5 12 20.5C12.2652 20.5 12.5196 20.3946 12.7071 20.2071C12.8946 20.0196 13 19.7652 13 19.5V13.5H19C19.2652 13.5 19.5196 13.3946 19.7071 13.2071C19.8946 13.0196 20 12.7652 20 12.5C20 12.2348 19.8946 11.9804 19.7071 11.7929C19.5196 11.6054 19.2652 11.5 19 11.5Z' fill='%23262626'/%3e%3c/svg%3e ");
+    }
+  }
+  &.buttonStyle2 {
+    background-color: v.$color-tertiary-accent;
+    color: v.$color-fourth-accent;
+    height: 40px;
+    border: 1px solid v.$color-fourth-accent;
+    &:hover {
+      background-color: v.$color-tertiary-accent-hover;
+    }
+  }
+  &.buttonStyle3 {
+    color: v.$color-white;
+    font-size: v.$element-font-size;
+    margin: 0px 4px;
+    padding: 5px 10px;
+    border: none;
+    background-color: v.$color-secondary-accent;
+    &:hover {
+      background-color: v.$color-secondary-accent-hover;
+    }
+    &:nth-child(1) {
+      background-color: v.$color-primary-accent;
+      &:hover {
+        background-color: v.$color-primary-accent-hover;
+      }
+    }
+  }
+  &.button-region-action {
+    width: 100%;
+    border-radius: v.$button-border-radius;
+    padding: 5px 10px;
+    font-size: v.$element-font-size;
+    &.button-save {
+      color: v.$color-white;
+      background-color: v.$color-primary-accent;
+      border: 1px solid v.$color-primary-accent;
+      margin: 10px 0px 5px 0;
+      &:hover {
+        background-color: v.$color-primary-accent-hover;
+      }
+    }
+    &.button-cancel {
+      color: v.$color-gray-5;
+      border: 1px solid v.$color-gray-5;
+      margin: 0px 0px 20px 0;
+      background-color: v.$color-white;
+    }
+  }
+}
+/********** /Button controls **********/
